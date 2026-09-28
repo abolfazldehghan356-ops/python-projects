@@ -1,0 +1,22 @@
+import random
+
+
+def check_number(number, guess):
+    if guess == number:
+        return "Correct!"
+    elif guess > number:
+        return "Too high!"
+    else:
+        return "Too low!"
+
+
+def get_guess():
+    return int(input("Guess the number: "))
+
+
+number = random.randint(1, 10)
+guess = get_guess()
+
+result = check_number(number, guess)
+
+print(result)
