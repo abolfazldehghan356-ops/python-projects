@@ -1,0 +1,18 @@
+def get_numbers():
+    numbers = []
+
+    for i in range(2):
+        number = int(input("Enter a number: "))
+        numbers.append(number)
+
+    return numbers
+
+
+def sum_numbers(numbers):
+    return numbers[0] + numbers[1]
+
+
+numbers = get_numbers()
+result = sum_numbers(numbers)
+
+print("Sum:", result)
